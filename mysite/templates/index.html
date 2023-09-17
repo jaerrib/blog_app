@@ -1,34 +1,205 @@
 {% extends "base.html" %}
-{% block content %}
+{% block portfolio_content %}
 
-<header>
-    <div class="container">
-        <div class="row">
-            <div class="mx-auto">
-                <div class="site-heading">
-                    <h3 class="my-4 mt-3"> Welcome to my awesome Blog </h3>
-                    <p>We Love Django As much as you do...!</p>
+<div class="header d-flex justify-content-center mb-5 align-items-center">
+        <div class="row align-items-center">
+            <div class="text-center col-md-6 my-3">
+                <img class="rounded-circle" style="width: 200px" src="img/jaerrib.jpg" alt="profile photo">
+            </div>
+            <div class="text-center col-md-6">
+                <h1 class="mb-3">John Beers</h1>
+                <p class="fs-4 mb-3">Software Developer</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-bg-secondary my-5">
+        <p class="fs-5 col-md-6 col-sm-9 p-3 mx-auto">
+            Hi, I'm John! I'm a software Developer with two years experience developing full-stack and standalone
+            applications with a focus on Python (Flask/Django). Aside from my technical skills, I have excellent
+            problem-solving, communication, and interpersonal skills transferred from my professional experience as a
+            manager/supervisor and former small business owner.
+        </p>
+    </div>
+
+    <div class="my-5 text-center">
+        <h2 class="mb-3" id="portfolio">Portfolio</h2>
+        <div class="container border-bottom">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-3 d-flex align-items-stretch">
+                    <div class="card w-100 rounded rounded-5">
+                        <img class="card-img-top rounded-bottom rounded-5" width="100%" height="300"
+                            src="/img/maerstanas_py.jpg" alt="Screenshot of Maerstanas (Python)" role="img">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold mb-4">Maerstanas (Python)</h5>
+                            <h6 class="card-subtitle mb-2">Technologies Used:</h6>
+                            <p class="card-text">Python, Pygame</p>
+                            <br>
+                            <a href="https://codeberg.org/jaerrib/maerstanas_python"
+                                class="btn btn-secondary btn-sm">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-3 d-flex align-items-stretch">
+                    <div class="card w-100 rounded rounded-5">
+                        <img class="card-img-top rounded-bottom rounded-5" width="100%" height="300"
+                            src="/img/maerstanas_js.jpg" alt="Screenshot of Maerstanas (JavaScript)" role="img">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold mb-4">Maerstanas (JS)</h5>
+                            <h6 class="card-subtitle mb-2">Technologies Used:</h6>
+                            <p class="card-text">HTML, CSS, Bootstrap, JavaScript, JS DOM Manipulation, Codeberg Pages
+                            </p>
+                            <a href="https://codeberg.org/jaerrib/maerstanas_js" class="btn btn-secondary btn-sm">Source
+                                Code</a>
+                            <a href="https://jaerrib.codeberg.page/maerstanas_js/" class="btn btn-secondary btn-sm">Live
+                                Site</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-3 d-flex align-items-stretch">
+                    <div class="card w-100 rounded rounded-5">
+                        <img class="card-img-top rounded-bottom rounded-5" width="100%" height="300"
+                            src="/img/kadenz.jpg" alt="Screenshot of Kadenz" role="img">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold mb-4">Kadenz</h5>
+                            <h6 class="card-subtitle mb-2">Technologies Used:</h6>
+                            <p class="card-text">HTML, CSS, Python, Django, SQlite, Bootstrap, Python Anywhere</p>
+                            <a href="https://github.com/jaerrib/kadenz" class="btn btn-secondary btn-sm">Source Code</a>
+                            <a href="https://jaerrib.pythonanywhere.com/" class="btn btn-secondary btn-sm">Live Site</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-3 d-flex align-items-stretch">
+                    <div class="card w-100 rounded rounded-5">
+                        <img class="card-img-top rounded-bottom rounded-5" width="100%" height="300"
+                            src="/img/tv_shows.jpg" alt="Screenshot of TV Shows exam" role="img">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold mb-4">TV Shows (final exam)</h5>
+                            <h6 class="card-subtitle mb-2">Technologies Used:</h6>
+                            <p class="card-text">HTML, CSS, Flask, Bootstrap, AWS</p>
+                            <br>
+                            <a href="http://3.22.61.13/" class="btn btn-secondary btn-sm">Live Site</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-3 d-flex align-items-stretch">
+                    <div class="card w-100 rounded rounded-5">
+                        <img class="card-img-top rounded-bottom rounded-5" width="100%" height="300"
+                            src="/img/portfolio_page.png" alt="Screenshot of portfolio page" role="img">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold mb-4">Portfolio Page</h5>
+                            <h6 class="card-subtitle mb-2">Technologies Used:</h6>
+                            <p class="card-text">HTML, CSS, Bootstrap, GitHub Pages</p>
+                            <a href="https://github.com/jaerrib/jaerrib.github.io"
+                                class="btn btn-secondary btn-sm">Source Code</a>
+                            <a href="http://johnbeers.xyz" class="btn btn-secondary disabled btn-sm">This Page</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-3 d-flex align-items-stretch">
+                    <div class="card w-100 rounded rounded-5">
+                        <img class="card-img-top rounded-bottom rounded-5" width="100%" height="300"
+                            src="/img/placebo_button_site.jpg" alt="Screenshot of Placebo Button page" role="img">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold mb-4">Placebo Button Page</h5>
+                            <h6 class="card-subtitle mb-2">Technologies Used:</h6>
+                            <p class="card-text">HTML, CSS, Bootstrap</p>
+                            <a href="https://github.com/jaerrib/placebo_button_website"
+                                class="btn btn-secondary btn-sm">Source Code</a>
+                            <a href="https://placebobutton.neocities.org/" class="btn btn-secondary btn-sm">Live
+                                Site</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-3 d-flex align-items-stretch">
+                    <div class="card w-100 rounded rounded-5">
+                        <img class="card-img-top rounded-bottom rounded-5" width="100%" height="300"
+                            src="/img/luciftias_site.jpg" alt="Screenshot of Luciftuas page" role="img">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold mb-4">Luciftias Page</h5>
+                            <h6 class="card-subtitle mb-2">Technologies Used:</h6>
+                            <p class="card-text">HTML, CSS, <a href="https://simplecss.org/">SimpleCSS</a></p>
+                            <a href="https://codeberg.org/jaerrib/luciftias_website"
+                                class="btn btn-secondary btn-sm">Source Code</a>
+                            <a href="https://luciftias.neocities.org/" class="btn btn-secondary btn-sm">Live Site</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-3 d-flex align-items-stretch">
+                    <div class="card w-100 rounded rounded-5">
+                        <img class="card-img-top rounded-bottom rounded-5" width="100%" height="300"
+                            src="/img/image2sound.jpg" alt="Screenshot of image2sound code" role="img">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold mb-4">image2sound</h5>
+                            <h6 class="card-subtitle mb-2">Technologies Used:</h6>
+                            <p class="card-text">Python</p>
+                            <a href="https://codeberg.org/jaerrib/image2sound" class="btn btn-secondary btn-sm">Source
+                                Code</a>
+                            <a href="https://pypi.org/search/?q=%22image2sound%22" class="btn btn-secondary btn-sm">PyPi
+                                Package</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</header>
-<div class="container">
-    <div class="row">
-        <!-- Blog Entries Column -->
-        <div class="col-md-8 mt-3 left">
-            {% for post in post_list %}
-            <div class="card mb-4">
-                <div class="card-body">
-                    <h2 class="card-title">{{ post.title }}</h2>
-                    <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
-                    <p class="card-text">{{post.content|slice:":200" }}</p>
-                    <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read More &rarr;</a>
-                </div>
+
+    <div class="my-5 text-center">
+        <h2 class="mb-3" id="skills">Skills</h2>
+        <div class="container row d-flex border-bottom mx-auto">
+            <div class="col-sm-12 col-md-6 pb-sm-3">
+                <p class="fs-5 fw-light">Technical Skills</p>
+                <ul class="list-unstyled">
+                    <li>HTML/CSS - Bootstrap, Flexbox</li>
+                    <li>Javascript</li>
+                    <li>Python - Flask, Django</li>
+                    <li>Jinja2</li>
+                    <li>MySQL, SQlite, Postgres</li>
+                    <li>Markdown</li>
+                </ul>
             </div>
-            {% endfor %}
+            <div class="col-sm-12 col-md-6">
+                <p class="fs-5 fw-light">Software / Tools</p>
+                <ul class="list-unstyled">
+                    <li>Linux, Windows</li>
+                    <li>VS Code, PyCharm, Fleet</li>
+                    <li>Inkscape, GIMP, Balsamiq, Penpot</li>
+                    <li>Git, GitHub, Codeberg</li>
+                    <li>MySQL Workbench, Podman</li>
+                    <li></li>
+                </ul>
+            </div>
         </div>
-        {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
     </div>
-</div>
+
+    <div class="container my-5 text-center pb-3 border-bottom">
+        <h2 class="mb-3" id="resume">Resume</h2>
+        <a class="btn btn-success btn-lg text-decoration-none" href="assets/John.Beers.resume.pdf">Download a PDF of my
+            resume</a>
+    </div>
+
+    <div class="my-5">
+        <h2 class="mb-3 text-center" id="interests">Interests</h2>
+        <div class="container row d-flex border-bottom mx-auto">
+            <div class="col-sm-12 col-md-6 pb-sm-3">
+                <p class="text-center fs-5 fw-light">Music</p>
+                <p class="text-left px-5">I've been around music my whole life. I am a multi-instrumentalist, but my
+                    favorite is the guitar, which I've played since I was 14. I've been involved with various projects
+                    over the years, some as briefly as a couple days while others have been around for decades.</p>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <p class="text-center fs-5 fw-light">Gaming</p>
+                <p class="text-left px-5">Although I don't always have the time to play, I enjoy a variety of video
+                    games, from open-world adventure to 4x strategy. I also like board games and have invented a few
+                    myself!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-3 text-center">
+        <h2 class="mb-3" id="contact">Contact</h2>
+        <p>Interested in my work or just want to connect? <a class="text-decoration-none"
+                href="mailto:johnbeers[at]protonmail[dot]com">Send me an email</a> or <a class="text-decoration-none"
+                href="https://www.linkedin.com/in/johnbeers9/">message me on LinkedIn</a>!</p>
+    </div>
 {%endblock%}
